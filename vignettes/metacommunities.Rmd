@@ -34,8 +34,8 @@ The niche scenario here will create niches that are uniformly spaced across the 
 values, with a standard deviation chosen automatically to cover a moderate breadth.
 
 The focus of this vignette will be explaining the options that can be invoked, primarily using the
-custom scenarios. In these scenarios, or all pieces of information that can be provided required,
-there are also defaultsr. In this way, a  metacommunity can be generated with real species in mind,
+custom scenarios. In these scenarios, for all pieces of information that can be provided,
+there are also defaults. In this way, a  metacommunity can be generated with real species in mind,
 or completely randomly, or something in between. It is useful to check out the help file to
 understand the defaults for the various options.
 
@@ -48,7 +48,7 @@ of them has parameters:
 ### Gaussian
   * scale: the maximum value of the curve
   * location: where on the resource axis the peak of the curve is
-  * breadth: How broad (i.e., the standard deviation of the gaussian function)
+  * breadth: how broad (i.e., the standard deviation of the gaussian function) the curve is
   
 ### Constant
   * scale: the height of the function
@@ -127,7 +127,7 @@ mcom = metacommunity(nsp = nsp, nr = 1, niches = niches_custom, niche_args = nop
 plot(mcom, res = 500, lwd = 0.8, xlim=c(0,1))
 ```
 
-Finally, We could combine these two approaches to generate a multidimensional niche. However, we
+Finally, we could combine these two approaches to generate a multidimensional niche. However, we
 won't run this code here; multidimensional niches are slow to generate, because they must be
 integrated numerically in multiple dimensions to generate the competition matrix.
 
