@@ -77,7 +77,7 @@ cbind(
 The main component of the river network is a weighted digraph; i.e., the topological relationships
 between locations. The network graph in `flume` uses equal-length stream reaches as nodes, while
 the edges describe which reaches are neighbours of each other. The simplest way to define a network
-is using an attribute list and a weighted adjacency matrix.
+is by using an attribute list and a weighted adjacency matrix.
 
 Discharge and cross-sectional area are required attributes (although area can be estimated from Q
 if omitted). Here, Q grows by 1 each time we move downstream (i.e., when we traverse an edge,
